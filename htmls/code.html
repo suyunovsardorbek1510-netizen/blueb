@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/style.css">
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+  </head>
+  <body>
+
+    <div class="header">
+      <a href="#" title="Help">? Help</a>
+      <a href="#!" title="Return to Home">Return to Home 🏠</a>
+    </div>
+
+    <div class="content h-screen w-full">
+      <h1>Start Code</h1>
+      <p class="piercing">
+       Enter your start code now to begin testing. Good luck!
+      </p>
+      <p class="piercing">
+        The start code contains
+        <span style="font-weight: bold">numbers only</span>.
+      </p>
+
+      <form class="" method="post" action="/sat/enter-code/">
+        <input
+          type="hidden"
+          name="csrfmiddlewaretoken"
+          value="Dw7VJ88oY9SJY8gyKrHWzTiSEeW1JCYs7pKzZ7T8pPnngcZuNQwCBogxtytMs75e"
+        />
+        <div class="code-inputs" id="codeInputs">
+          <input
+            type="text"
+            class="code-input border-2 border-black bg-white"
+            maxlength="1"
+            pattern="[0-9]"
+            name="code_1"
+          />
+
+          <input
+            type="text"
+            class="code-input border-2 border-black bg-white"
+            maxlength="1"
+            pattern="[0-9]"
+            name="code_2"
+          />
+
+          <input
+            type="text"
+            class="code-input border-2 border-black bg-white"
+            maxlength="1"
+            pattern="[0-9]"
+            name="code_3"
+          />
+
+          <input
+            type="text"
+            class="code-input border-2 border-black bg-white"
+            maxlength="1"
+            pattern="[0-9]"
+            name="code_4"
+          />
+
+          <input
+            type="text"
+            class="code-input border-2 border-black bg-white"
+            maxlength="1"
+            pattern="[0-9]"
+            name="code_5"
+          />
+
+          <input
+            type="text"
+            class="code-input border-2 border-black bg-white"
+            maxlength="1"
+            pattern="[0-9]"
+            name="code_6"
+          />
+        </div>
+        <button type="submit""><a href="./bluesat.html" class="text-black">Start Test</a></button>        
+
+      </form>
+      <p class="desc" style="margin-top: 200px;">You can <a href="" class="text-purple-800 underline underline-offset-2 decoration-purple-800">review the instructions</a> that the proctor reads aloud</p>
+    </div>
+
+    <script src="../javascripts/javascript.js"></script>
+  </body>
+</html>
